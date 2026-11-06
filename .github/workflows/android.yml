@@ -44,7 +44,6 @@ jobs:
       - name: Build Android APK
         timeout-minutes: 35
         run: |
-          set -o pipefail
           yes | buildozer android debug
 
       - name: Upload APK
